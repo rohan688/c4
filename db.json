@@ -1,0 +1,35 @@
+{
+  "users": [],
+  "meetups": [
+    {
+      "title": "rohan",
+      "location": "bangalore",
+      "date": "1234-22-12",
+      "time": "03:30",
+      "theme": "food",
+      "description": "bfwlfhenlbe",
+      "image": "jnrfwrof",
+      "id": 1
+    },
+    {
+      "title": "sid",
+      "location": "kolkata",
+      "date": "2200-12-29",
+      "time": "12:20",
+      "theme": "food",
+      "description": " bbbfbfb",
+      "image": "",
+      "id": 2
+    },
+    {
+      "title": "sid",
+      "location": "kolkata",
+      "date": "2200-12-29",
+      "time": "12:20",
+      "theme": "food",
+      "description": " bbbfbfb",
+      "image": "eefbbbefeb",
+      "id": 3
+    }
+  ]
+}
