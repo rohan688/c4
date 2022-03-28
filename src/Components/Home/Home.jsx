@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios"
+import {useNavigate } from "react-router-dom"
 
 export const Home = () => {
-
+const navigate=useNavigate()
 const[meet,setMeet]=useState([])
 const[location,setlocation]=useState()
 
@@ -11,6 +12,8 @@ const[location,setlocation]=useState()
 useEffect(()=>{
   axios.get(`http://localhost:8080/meetups`).then((res)=>{
     setMeet(res.data)
+  }).catch((err)=>{
+     navigate("*")
   })
 },[])
 const handleChange =(e)=>{
