@@ -29,7 +29,7 @@ const handleform=(e)=>{
 
 const adddata=(e)=>{
 e.preventDefault();
-axios.post("http://localhost:8080/meetups",{
+axios.post("http://localhost:8080/users",{
   name:form.name,
   password:form.password,
   location:form.location,

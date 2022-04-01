@@ -1,5 +1,15 @@
 {
-  "users": [],
+  "users": [
+    {
+      "name": "",
+      "password": "",
+      "location": "",
+      "interests": "",
+      "image": "",
+      "subscribed": "",
+      "id": 1
+    }
+  ],
   "meetups": [
     {
       "id": 1,

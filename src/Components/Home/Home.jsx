@@ -36,7 +36,7 @@ const navigate=useNavigate()
 
         .map((el) => {
           return (
-            <Link to={`/meetups/${el.location}`} className="events">
+            <Link to={`/Event/${el.id}`} className="events">
               { 
               // add your children here (divs)
               // ex : title, theme, description, date, time, location, image(optional)
