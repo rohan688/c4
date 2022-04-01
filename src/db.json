@@ -1,5 +1,4 @@
 {
-  "users": [],
   "meetups": [
     {
       "id": 1,
@@ -10,7 +9,7 @@
       "theme": "technology",
       "description": "Random Event",
       "image": "https://images.unsplash.com/photo",
-      "status": "Unsubscribe"
+      "status": "unsubscribe"
     },
     {
       "title": "",
@@ -52,26 +51,6 @@
       "description": "",
       "image": "",
       "id": 5
-    },
-    {
-      "title": "letsgo",
-      "location": "delhi",
-      "date": "2000-11-20",
-      "time": "12:20",
-      "theme": "food",
-      "description": "car",
-      "image": "nefhwpe",
-      "id": 6
-    },
-    {
-      "title": "letsgo",
-      "location": "delhi",
-      "date": "2000-11-20",
-      "time": "12:20",
-      "theme": "food",
-      "description": "car",
-      "image": "nefhwpe",
-      "id": 7
     }
   ]
 }

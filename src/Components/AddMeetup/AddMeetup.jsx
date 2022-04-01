@@ -12,6 +12,7 @@ const [form,setform]=useState({
   theme:"",
   description:"",
   image:"",
+  status:"Unsubscribe"
 
 })
 const handleChange =(e)=>{
@@ -91,7 +92,7 @@ image:form.image})
           required
         />
         <br />
-        <input className="submitMeetupForm" type="submit"   onClick={(event) => {handlesubmit(event) }}/>
+        <input className="submitMeetupForm" type="submit" onClick={(event) => {handlesubmit(event) }}/>
       </form>
     </div>
   );

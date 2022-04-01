@@ -29,7 +29,6 @@ const navigate=useNavigate()
       {form
         .filter((el) => {if(el.location==location)
           {return true}
-         
         else{
           return false
         }}) 
@@ -75,7 +74,7 @@ const navigate=useNavigate()
             <option value="mumbai">Mumbai</option>
           </select>
         </div>
-        <Link to={"/AddMeetup"}> Add Meetup</Link>
+        <Link to={`/AddMeetup`}> Add Meetup</Link>
         <h1>Subscribed Events</h1>
         <div className="subscribedEvents">
           {/* All user subcribed events should be displayed here in an ascending order of date */}
@@ -83,7 +82,7 @@ const navigate=useNavigate()
           {form
             .map((el) => {
               return (
-                <Link to={`/meetups/${el.location}`} className="events">
+                <Link to={`/Event/${el.id}`} className="events">
                   {
                   /* Each event should have these elements/children (divs):
                     ex : title, theme, description, date, time, location, image(optional)
@@ -92,13 +91,11 @@ const navigate=useNavigate()
   <tbody>
 
     <td>{el.title}</td>
-    <td>{el.location}</td>
+    <td>{el.theme}</td>
     <td>{el.description}</td>
     <td>{el.date}</td>
     <td>{el.time}</td>
-    <td>{el.theme}</td>
-    <td>{el.image}</td>
-    <td>{el.status}</td>
+    <td>{el.location}</td>
   
     </tbody>
 

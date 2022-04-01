@@ -6,19 +6,22 @@ import { Link, useParams } from "react-router-dom";
 export const Event = () => {
 
   const [form,setform]=useState([])
+  console.log(form,"form")
+
+  const {id}=useParams()
 
   useEffect(()=>{
     getdata()
    },[])
 
    const getdata = () =>{
-    axios.get('http://localhost:8080/meetups').then(({data})=>{setform(data)})
+    axios.get(`http://localhost:8080/meetups/${id}`).then(({data})=>{setform(data)})
     
   }
 
   const patchdata =(id,status,data) =>{
-    if(status=="subscribe"){status="subscribe"}
-    else{status="unsubscribe"}
+    if(status==="subscribe"){status="Unsubscribe"}
+    else{status="subscribe"}
 
     axios.patch(`http://localhost:8080/meetups/${id}`,{status}).then(()=>{getdata()})
 
@@ -31,32 +34,32 @@ export const Event = () => {
       ex : title, theme, description, date, time, location, image(optional)
       the classNames should be also : title, theme, description, date, time, location, image(optional)
       */
-      form.map((el) => {
-          return (
-            <>            <Link to={`/meetups/${el.location}`} className="events">
+  
+       
+            <>        
             { 
            
 <table>
 <tbody>
 
-  <td>{el.title}</td>
-  <td>{el.theme}</td>
-  <td>{el.description}</td>
-  <td>{el.date}</td>
-  <td>{el.time}</td>
-
+  <td>{form.title}</td>
+  <td>{form.theme}</td>
+  <td>{form.description}</td>
+  <td>{form.date}</td>
+  <td>{form.time}</td>
+  <td>{form.location}</td>
   </tbody>
 
 </table>
             
           }
           
-<button className="unsubscribe" onClick={() => { patchdata(el.id,el.status)}}>{el.status}</button>
-<button className="subscribe" onClick={() => { patchdata(el.id,el.status)}}>{el.status}</button>
-          </Link></>
+<button className="unsubscribe" onClick={() => { patchdata(form.id,form.status)}}>{form.status}</button>
 
-          );
-        })
+         </>
+
+          
+        
       
       }
 
