@@ -1,44 +1,14 @@
-import axios from "axios";
-import { useState } from "react";
-
 // User should be able to add/create new meetups 
 
 export const AddMeetup = () => {
-const [form,setform]=useState({
-  title:"",
-  location:"",
-  date:"",
-  time:"",
-  theme:"",
-  description:"",
-  image:"",
-
-})
-const handleChange =(e)=>{
-  const {className,value} =e.target
-  setform({...form,[className]:value})
-}
-
-const handlesubmit=(e)=>{
-e.preventDefault()
-axios.post("http://localhost:8080/meetups",{title: form.title,
-location:form.location ,
-date: form.date,
-time: form.time,
-theme: form.theme,
-description:form.description,
-image:form.image})
-}
-
-
   return (
     <div className="addMeetupContainer">
       <form>
         <h1>Add Meetup</h1>
         <label>title</label>
-        <input type="text" className="title" onChange={(e) =>{handleChange(e)}} required />
+        <input type="text" className="title" onChange={() => { }} required />
         <label>Location</label>
-        <select value={""} className="location" onChange={(event) => {handleChange(event)}}>
+        <select value={""} className="location" onChange={(event) => { }}>
           <option value=""></option>
           <option value="bangalore">Bangalore</option>
           <option value="kolkata">Kolkata</option>
@@ -50,7 +20,7 @@ image:form.image})
         <input
           type="text"
           className="date"
-          onChange={(event) => {handleChange(event)}}
+          onChange={(event) => { }}
           placeholder="format YYYY-MM-DD"
           required
         />
@@ -59,13 +29,13 @@ image:form.image})
         <input
           type="text"
           className="time"
-          onChange={(event) => {handleChange(event) }}
+          onChange={(event) => { }}
           placeholder="format HH:MM"
           required
         />
         <br />
         <label>Theme</label>
-        <select value={""} className="theme" onChange={(event) => {handleChange(event) }}>
+        <select value={""} className="theme" onChange={(event) => { }}>
           <option value="">-----------</option>
           <option value="technology">Technology</option>
           <option value="food">Food</option>
@@ -78,7 +48,7 @@ image:form.image})
         <input
           type="text"
           className="description"
-          onChange={(event) => {handleChange(event) }}
+          onChange={(event) => { }}
           placeholder="Description"
           required
         />
@@ -87,11 +57,11 @@ image:form.image})
         <input
           type="text"
           className="image"
-          onChange={(event) => {handleChange(event) }}
+          onChange={(event) => { }}
           required
         />
         <br />
-        <input className="submitMeetupForm" type="submit"   onClick={(event) => {handlesubmit(event) }}/>
+        <input className="submitMeetupForm" type="submit" />
       </form>
     </div>
   );

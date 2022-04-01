@@ -1,35 +1,76 @@
 {
-  "users": [],
   "meetups": [
     {
-      "title": "rohan",
+      "id": 1,
+      "title": "Saunter Strech",
       "location": "bangalore",
-      "date": "1234-22-12",
-      "time": "03:30",
-      "theme": "food",
-      "description": "bfwlfhenlbe",
-      "image": "jnrfwrof",
-      "id": 1
+      "date": "2022-03-25",
+      "time": "23:59",
+      "theme": "technology",
+      "description": "Random Event",
+      "image": "https://images.unsplash.com/photo",
+      "status": "unsubscribe"
     },
     {
-      "title": "sid",
-      "location": "kolkata",
-      "date": "2200-12-29",
-      "time": "12:20",
+      "title": "",
+      "location": "bangalore",
+      "date": "22-2-2",
+      "time": "2:30",
       "theme": "food",
-      "description": " bbbfbfb",
-      "image": "",
-      "id": 2
+      "description": "hh",
+      "image": "dd",
+      "id": 2,
+      "status": "unsubscribe"
     },
     {
-      "title": "sid",
-      "location": "kolkata",
-      "date": "2200-12-29",
-      "time": "12:20",
+      "title": "",
+      "location": "bangalore",
+      "date": "22-2-2",
+      "time": "2:30",
       "theme": "food",
-      "description": " bbbfbfb",
-      "image": "eefbbbefeb",
+      "description": "hh",
+      "image": "dd",
       "id": 3
+    },
+    {
+      "title": "icdincidn",
+      "location": "bangalore",
+      "date": "22-2-2",
+      "time": "2:30",
+      "theme": "food",
+      "description": "hh",
+      "image": "dd",
+      "id": 4
+    },
+    {
+      "title": "dcbdvudj",
+      "location": "",
+      "date": "",
+      "time": "",
+      "theme": "",
+      "description": "",
+      "image": "",
+      "id": 5
+    },
+    {
+      "title": "letsgo",
+      "location": "delhi",
+      "date": "2000-11-20",
+      "time": "12:20",
+      "theme": "food",
+      "description": "car",
+      "image": "nefhwpe",
+      "id": 6
+    },
+    {
+      "title": "letsgo",
+      "location": "delhi",
+      "date": "2000-11-20",
+      "time": "12:20",
+      "theme": "food",
+      "description": "car",
+      "image": "nefhwpe",
+      "id": 7
     }
   ]
 }
